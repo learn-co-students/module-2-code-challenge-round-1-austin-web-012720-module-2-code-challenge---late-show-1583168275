@@ -7,11 +7,12 @@ class AppearancesController < ApplicationController
     @appearance = Appearance.new(appearance_params)
     if @appearance.valid?
       @appearance.save
-      episode = appearance_params(:episode_id)
+      episode = appearance_params[:episode_id]
       redirect_to episode_path(episode)
     else
       @errors = @appearance.errors.full_messages
       render :new
+    end
   end
 
 

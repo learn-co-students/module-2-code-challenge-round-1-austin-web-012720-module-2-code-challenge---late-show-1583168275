@@ -1,0 +1,2 @@
+class AddRatingToAppearance < ApplicationRecord
+end

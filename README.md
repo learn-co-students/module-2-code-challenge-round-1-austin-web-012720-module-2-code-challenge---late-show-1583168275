@@ -13,11 +13,11 @@ In this repo, there is a Rails application with some features built out. Your jo
 - ActiveRecord
 - Validations
 
-## Setup
+## Setup - Done
 
 Before you begin coding your solution, clone this repo and then `cd` into it. Then run `bundle install`, `rails db:migrate`, and `rails db:seed` to install dependencies and set up the database, and run `rails s` to start the server.
-
-## The Domain
+ 
+## The Domain - Done
 
 The application keeps track of the guests that have appeared on the show.
 
@@ -66,7 +66,7 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ***Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially.***
 
-### 1. Guest Show Page
+### 1. Guest Show Page - Done
 
 There should be a show page for each Guest. It should display the:
 
@@ -75,7 +75,7 @@ There should be a show page for each Guest. It should display the:
 
 On the Guests index page, clicking on a guest's name should navigate to the show page.
 
-### 2. Appearance Model
+### 2. Appearance Model - Done
 
 To log that a specific Guest appeared on a certain Episode, we need to create the Appearance model. **Make the necessary updates to the schema and models** so that:
 
@@ -83,7 +83,7 @@ To log that a specific Guest appeared on a certain Episode, we need to create th
 - Episode can have multiple guests
 - Appearance stores a numeric rating
 
-### 3. New Appearance Form
+### 3. New Appearance Form - Done
 
 A user can fill out a form to create a new Appearance. They can:
 
@@ -94,7 +94,7 @@ A user can fill out a form to create a new Appearance. They can:
 
 After submitting the form, the user should be redirected to the selected episode's show page.
 
-### 4. Episode Show Page
+### 4. Episode Show Page - Done
 
 On the episode show page, a user should see:
 

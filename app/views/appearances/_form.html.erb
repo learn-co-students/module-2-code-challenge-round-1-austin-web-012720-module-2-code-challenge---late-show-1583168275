@@ -1,0 +1,7 @@
+<%= form_for @appearance do |a| %>
+<%= a.collection_select(:guest_id, Guest.all, :id, :name)%>
+<%= a.collection_select(:episode_id, Episode.all, :id, :number)%>
+Rating : 
+<%= a.number_field :rating%>
+<%= a.submit %>
+<%end%>

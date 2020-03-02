@@ -1,0 +1,8 @@
+
+Name: <%= @guest.name %>  <br/>
+Occupation: <%= @guest.occupation%> <br/>
+Episodes: <br/>
+<% @guest.episodes.each do |e| %>
+<%= link_to e.number , episode_path(e) %>
+ #Appearance.all.find(episode_id: e.id ,guest_id:  @guest.id).rating<br/>
+<%end%>

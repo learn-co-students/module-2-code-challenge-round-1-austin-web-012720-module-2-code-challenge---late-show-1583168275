@@ -1,0 +1,6 @@
+
+<% @episodes.each do |episode| %>
+<% if episode.id == @episode.id %>
+<%= episode.guests %>
+<% end %>
+<% end %>

@@ -1,0 +1,14 @@
+Guest # <%= @guest.id %>
+<br><br>
+Name: <%= @guest.name %>
+<br>
+Occupation: <%= @guest.occupation %>
+
+<ul>
+<% @guest.episodes.each do |episode| %>
+<li><%= link_to episode.date, @episode %> <%= episode.appearance.rating %> </li>
+
+
+</ul>
+
+<% end %>

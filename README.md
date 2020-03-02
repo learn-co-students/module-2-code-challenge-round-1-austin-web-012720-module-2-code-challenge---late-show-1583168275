@@ -66,14 +66,14 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ***Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially.***
 
-### 1. Guest Show Page
-
+<!-- ### 1. Guest Show Page -->
+<!-- 
 There should be a show page for each Guest. It should display the:
 
 - Guest's name
 - Guest's occupation
 
-On the Guests index page, clicking on a guest's name should navigate to the show page.
+On the Guests index page, clicking on a guest's name should navigate to the show page. -->
 
 ### 2. Appearance Model
 

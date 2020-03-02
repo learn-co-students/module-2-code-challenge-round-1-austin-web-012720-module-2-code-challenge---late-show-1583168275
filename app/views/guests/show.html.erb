@@ -1,0 +1,13 @@
+<h1>Show Guest<h1>
+
+<%guest.name%>
+<%guest.occupation%>
+<ul>
+  <% @guests.each do |guest| %>
+    <li>
+      <%= guest.name %><br>
+      <%= link_to guest.occupation, guest_url %>
+    </li>
+    <br>
+  <% end %>
+</ul>

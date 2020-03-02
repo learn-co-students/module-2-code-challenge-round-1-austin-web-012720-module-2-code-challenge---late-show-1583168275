@@ -1,0 +1,6 @@
+<%= form_for(@guest) do |f| %>
+  <%= f.collection_select(:guest_id, Guest.all, :id, :name, :episode, prompt: true) %><br>
+  <%= f.label :rating%>
+  <%= f.text_field :rating%>
+  <%= f.submit %>
+<%end%>

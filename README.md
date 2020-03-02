@@ -70,8 +70,8 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 There should be a show page for each Guest. It should display the:
 
-- Guest's name
-- Guest's occupation
+x Guest's name
+x Guest's occupation
 
 On the Guests index page, clicking on a guest's name should navigate to the show page.
 
@@ -79,11 +79,12 @@ On the Guests index page, clicking on a guest's name should navigate to the show
 
 To log that a specific Guest appeared on a certain Episode, we need to create the Appearance model. **Make the necessary updates to the schema and models** so that:
 
-- Guest can appear on many episodes
-- Episode can have multiple guests
-- Appearance stores a numeric rating
+x Guest can appear on many episodes
+x Episode can have multiple guests
+x Appearance stores a numeric rating
 
-### 3. New Appearance Form
+### 3. New Appearance Form 
+THIS IS WHERE I CRASHED AND BURNED!!!!!! DOES APPEARANCES NEED A CONTROLLER AND A NEW VIEW OR IS THERE A WAY TO BUILD THIS INTO GUESTS SHOW PAGE? I DON'T KNOW AND CAN'T GET IT TO WORK 
 
 A user can fill out a form to create a new Appearance. They can:
 
@@ -98,7 +99,7 @@ After submitting the form, the user should be redirected to the selected episode
 
 On the episode show page, a user should see:
 
-- Episode date
+x Episode date
 - A list of the guests who were on that episode
 - Each guest's name should link to the Guest Show page
 

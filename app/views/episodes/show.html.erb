@@ -1,0 +1,11 @@
+<label>Episodes date: </label><%=@episode.date%><br>
+<label>Episodes Guests:</label><%@episode.guests.each do |guest|%><br>
+<%= link_to guest.name, guest_path(guest) %> <br>
+
+<%end%>
+<% @total = 0 %>
+<% @episode.appearances.each do |num| %>
+
+<% @total += num.rating %>
+<%end%>
+<label>Average Rating:</label><%= (@total/@episode.appearances.length).to_f %>

@@ -1,0 +1,10 @@
+
+<label>Guests' name: </label><%= @guest.name %><br>
+
+<label>Guests' occupation: </label><%= @guest.occupation.upcase %><br>
+<h3>Appearances: </h3>
+<% @guest.episodes.each do |epi| %>
+<%= link_to epi.date, episode_path(epi) %><br>
+<%= epi.number %><br>
+<br>
+<%end%>

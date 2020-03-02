@@ -1,0 +1,14 @@
+<% if !@appearance.errors.empty? %>
+  <label>Errors: <%= @appearance.errors.messages %></label>
+<%end%>
+
+<h1> Appearance Form: </h3>
+  <%= form_for @appearance do |f| %>
+  <%=f.label :guest %>
+  <%=f.collection_select :guest_id, Guest.all, :id, :name, prompt: true %>
+  <%=f.label :episode %>
+  <%=f.collection_select :episode_id, Episode.all, :id, :number, prompt: true %>
+  <%=f.label :rating %>
+  <%=f.number_field :rating %>
+  <%=f.submit %>
+  <%end%>

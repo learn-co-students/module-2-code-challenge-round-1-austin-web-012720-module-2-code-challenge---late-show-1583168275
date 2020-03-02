@@ -1,0 +1,10 @@
+<%= form_for @appearance do |f| %>
+
+    Select Guest:
+    <%= f.collection_select(:guest, :guest_id, Guest.all, :id, :name)%>
+    Select episode:
+    <%= f.collection_select(:episode, :episode_id, Episode.all, :id, :name)%>
+
+    <%=f.submit %>
+
+    <% end %>

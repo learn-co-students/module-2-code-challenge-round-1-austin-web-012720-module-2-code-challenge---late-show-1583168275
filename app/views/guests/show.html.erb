@@ -1,0 +1,26 @@
+<h2>Guest Show Page</h2>
+
+Guest Name: <%= @guest.name %><br>
+Guest Occupation: <%= @guest.occupation %>
+<br><br>
+Guest Episodes with Appearance Ratings:<ul>
+<% @guest.episodes.each do |episode| %>
+<li><%= link_to episode.date, episode_path(episode) %>
+    <% @guest.appearances.each do |appearance| %> <li>Rating:
+        <%= appearance.rating %></li>
+    <% end %>
+    </li>
+<% end %>
+</ul>
+
+<p> Just realized at end this above code displays ratings for all appearances...would need to select individual episode from appearances to display that rating.</p>
+
+Attempting to separate into individual ratings per episode:
+<% @guest.episodes.each do |episode| %>
+<li><%= link_to episode.date, episode_path(episode) %>
+   <% episodes = @guest.appearances.find_by(episode_id: episode) do |appearance| %> <li>Rating:
+        <%= appearance.rating %></li>
+    <% end %>
+    </li>
+<% end %>
+</ul>

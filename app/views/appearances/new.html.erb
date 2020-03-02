@@ -1,0 +1,15 @@
+<h1>Appearances#new</h1>
+<p>Find me in app/views/appearances/new.html.erb</p>
+
+<%= form_for @appearance do |f| %>
+<%= f.label "Guest Dropdown"%>
+<%= f.collection_select(:guest_id, Guest.all, :id, :name, prompt: true) %><br>
+<br>
+<%= f.label "Episode Dropdown"%>
+<%= f.collection_select(:episode_id, Episode.all, :id, :date, prompt: true) %><br>
+<br>
+<%= f.label "Rating of Episode"%>
+<%= f.text_field :rating %><br>
+<br>
+<%= f.submit %>
+<% end %>

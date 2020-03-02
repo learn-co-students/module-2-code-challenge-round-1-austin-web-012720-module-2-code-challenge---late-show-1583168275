@@ -1,0 +1,26 @@
+<h1>Create a new Appearance</h1>
+
+<%= form_for(@appearance) do |f| %>
+
+  <% if @appearance.errors.any? %>
+      <div id="error_explanation">
+        <h3><%= pluralize(@appearance.errors.count, "error") %> prohibited this submission from being saved:</h3>
+        <ul>
+          <% @appearance.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+  <% end %>
+
+  <%= f.label :guest %>
+  <%= f.collection_select(:guest_id, Guest.all, :id, :name, prompt: true) %><br>
+
+  <%= f.label :episode %>
+  <%= f.collection_select(:episode_id, Episode.all, :id, :date, prompt: true) %><br>
+
+  <%= f.label :rating %>
+  <%= f.text_field :rating %><br>
+
+  <%= f.submit %>
+<% end %>

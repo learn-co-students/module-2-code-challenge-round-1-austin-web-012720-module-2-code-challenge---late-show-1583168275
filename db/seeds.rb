@@ -25,3 +25,9 @@ date = Date.parse('2015-09-08')
   date = date.next
 end
 
+20.times do
+  app = Appearance.new
+  app.guest = Guest.all.sample
+  app.episode = Episode.all.sample
+  app.save 
+end

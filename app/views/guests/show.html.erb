@@ -1,0 +1,12 @@
+<h2>Out guest tonight is the very talented...</h2>
+
+
+
+<h3><%= @guest.occupation %>, <%= @guest.name %>!</h3>
+<br>
+<% @guest.episodes.each do |episode| %>
+   <p><%= episode.date %> </p>
+<% end %>
+<% @guest.appearances.each do |app| %>
+    <p><%= app.rating %> </p>
+ <% end %>

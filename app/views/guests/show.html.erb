@@ -1,0 +1,20 @@
+<h1>Meet <%=@guest.name%></h1>
+
+<h3><%=@guest.occupation%></h3>
+
+<h2>This guest has appeared on the following episodes! </h2>
+
+<% @guest.appearances.each do |a|%>
+<p>Air date: <%= a.episode.date %> </p>
+<p>with a rating of <%= a.rating %> </p>
+
+<h3> All guests on that episode: </h3>
+    <% a.episode.guests.each do |g|%>
+    <%= link_to g.name, guest_path(g)%><br>
+    <% end %>
+
+<% end %>
+
+
+
+<p><%= link_to "All Guests", guests_path%></p>

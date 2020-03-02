@@ -1,0 +1,12 @@
+<h1> Episode for <%=@episode.date%> </h1>
+
+<p>This episode features:</p>
+
+<% @episode.guests.each do |g|%>
+<h5><%=link_to g.name, guest_path(g)%></h5>
+<br>
+<% end %>
+
+
+
+
